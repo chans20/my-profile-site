@@ -1,0 +1,96 @@
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Apply animations */
+.skill-badge {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.skill-badge:nth-child(1) { animation-delay: 0.1s; }
+.skill-badge:nth-child(2) { animation-delay: 0.2s; }
+.skill-badge:nth-child(3) { animation-delay: 0.3s; }
+.skill-badge:nth-child(4) { animation-delay: 0.4s; }
+.skill-badge:nth-child(5) { animation-delay: 0.5s; }
+.skill-badge:nth-child(6) { animation-delay: 0.6s; }
+.skill-badge:nth-child(7) { animation-delay: 0.7s; }
+.skill-badge:nth-child(8) { animation-delay: 0.8s; }
+
+/* Scroll reveal sections */
+.section-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fbbf24;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f59e0b;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles */
+a:focus {
+    outline: 2px solid #fbbf24;
+    outline-offset: 2px;
+}
+
+/* Project card animations */
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Space Grotesk font utility */
+.font-display {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+}
